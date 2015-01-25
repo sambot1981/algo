@@ -5,9 +5,9 @@ public class QF {
 	private int[] id;
 
 	public QF(int N) {
-		id = new int[N];
+		this.id = new int[N];
 		for (int i = 0; i < id.length; i++)
-			id[i] = i;
+			this.id[i] = i;
 	}
 
 	public boolean connected(int p, int q) {
