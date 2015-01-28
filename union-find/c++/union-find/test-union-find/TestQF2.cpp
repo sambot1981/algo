@@ -9,8 +9,7 @@ void test_instanciation_quick_find()
 	BOOST_CHECK(p != nullptr);
 }
 
-test_suite*
-init_unit_test_suite(int argc, char* argv[])
+test_suite* init_unit_test_suite(int argc, char* argv[])
 {
 	framework::master_test_suite().
 		add(BOOST_TEST_CASE(&test_instanciation_quick_find));
