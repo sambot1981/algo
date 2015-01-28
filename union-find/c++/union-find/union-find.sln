@@ -1,20 +1,39 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "union-find", "union-find\union-find.vcxproj", "{2644EC8E-E00D-48BA-A2EB-53D043C2A685}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-union-find", "test-union-find\test-union-find.vcxproj", "{9DA760F9-5C78-4510-BCEF-F520B5B3DC0A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2644EC8E-E00D-48BA-A2EB-53D043C2A685} = {2644EC8E-E00D-48BA-A2EB-53D043C2A685}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
 		Release|Win32 = Release|Win32
+		static-g|Win32 = static-g|Win32
+		static-r|Win32 = static-r|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2644EC8E-E00D-48BA-A2EB-53D043C2A685}.Debug|Win32.ActiveCfg = Debug|Win32
 		{2644EC8E-E00D-48BA-A2EB-53D043C2A685}.Debug|Win32.Build.0 = Debug|Win32
 		{2644EC8E-E00D-48BA-A2EB-53D043C2A685}.Release|Win32.ActiveCfg = Release|Win32
 		{2644EC8E-E00D-48BA-A2EB-53D043C2A685}.Release|Win32.Build.0 = Release|Win32
+		{2644EC8E-E00D-48BA-A2EB-53D043C2A685}.static-g|Win32.ActiveCfg = static-g|Win32
+		{2644EC8E-E00D-48BA-A2EB-53D043C2A685}.static-g|Win32.Build.0 = static-g|Win32
+		{2644EC8E-E00D-48BA-A2EB-53D043C2A685}.static-r|Win32.ActiveCfg = static-r|Win32
+		{2644EC8E-E00D-48BA-A2EB-53D043C2A685}.static-r|Win32.Build.0 = static-r|Win32
+		{9DA760F9-5C78-4510-BCEF-F520B5B3DC0A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9DA760F9-5C78-4510-BCEF-F520B5B3DC0A}.Debug|Win32.Build.0 = Debug|Win32
+		{9DA760F9-5C78-4510-BCEF-F520B5B3DC0A}.Release|Win32.ActiveCfg = Release|Win32
+		{9DA760F9-5C78-4510-BCEF-F520B5B3DC0A}.Release|Win32.Build.0 = Release|Win32
+		{9DA760F9-5C78-4510-BCEF-F520B5B3DC0A}.static-g|Win32.ActiveCfg = Release|Win32
+		{9DA760F9-5C78-4510-BCEF-F520B5B3DC0A}.static-g|Win32.Build.0 = Release|Win32
+		{9DA760F9-5C78-4510-BCEF-F520B5B3DC0A}.static-r|Win32.ActiveCfg = Release|Win32
+		{9DA760F9-5C78-4510-BCEF-F520B5B3DC0A}.static-r|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
