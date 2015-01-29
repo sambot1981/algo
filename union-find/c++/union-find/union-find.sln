@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "union-find", "union-find\union-find.vcxproj", "{2644EC8E-E00D-48BA-A2EB-53D043C2A685}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-union-find", "test-union-find\test-union-find.vcxproj", "{9DA760F9-5C78-4510-BCEF-F520B5B3DC0A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-boost", "test-boost\test-boost.vcxproj", "{8080955F-9407-4D62-8D30-E699483124F1}"
 	ProjectSection(ProjectDependencies) = postProject
 		{2644EC8E-E00D-48BA-A2EB-53D043C2A685} = {2644EC8E-E00D-48BA-A2EB-53D043C2A685}
 	EndProjectSection
@@ -26,14 +26,14 @@ Global
 		{2644EC8E-E00D-48BA-A2EB-53D043C2A685}.static-g|Win32.Build.0 = static-g|Win32
 		{2644EC8E-E00D-48BA-A2EB-53D043C2A685}.static-r|Win32.ActiveCfg = static-r|Win32
 		{2644EC8E-E00D-48BA-A2EB-53D043C2A685}.static-r|Win32.Build.0 = static-r|Win32
-		{9DA760F9-5C78-4510-BCEF-F520B5B3DC0A}.Debug|Win32.ActiveCfg = Debug|Win32
-		{9DA760F9-5C78-4510-BCEF-F520B5B3DC0A}.Debug|Win32.Build.0 = Debug|Win32
-		{9DA760F9-5C78-4510-BCEF-F520B5B3DC0A}.Release|Win32.ActiveCfg = Release|Win32
-		{9DA760F9-5C78-4510-BCEF-F520B5B3DC0A}.Release|Win32.Build.0 = Release|Win32
-		{9DA760F9-5C78-4510-BCEF-F520B5B3DC0A}.static-g|Win32.ActiveCfg = Release|Win32
-		{9DA760F9-5C78-4510-BCEF-F520B5B3DC0A}.static-g|Win32.Build.0 = Release|Win32
-		{9DA760F9-5C78-4510-BCEF-F520B5B3DC0A}.static-r|Win32.ActiveCfg = Release|Win32
-		{9DA760F9-5C78-4510-BCEF-F520B5B3DC0A}.static-r|Win32.Build.0 = Release|Win32
+		{8080955F-9407-4D62-8D30-E699483124F1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8080955F-9407-4D62-8D30-E699483124F1}.Debug|Win32.Build.0 = Debug|Win32
+		{8080955F-9407-4D62-8D30-E699483124F1}.Release|Win32.ActiveCfg = Release|Win32
+		{8080955F-9407-4D62-8D30-E699483124F1}.Release|Win32.Build.0 = Release|Win32
+		{8080955F-9407-4D62-8D30-E699483124F1}.static-g|Win32.ActiveCfg = Release|Win32
+		{8080955F-9407-4D62-8D30-E699483124F1}.static-g|Win32.Build.0 = Release|Win32
+		{8080955F-9407-4D62-8D30-E699483124F1}.static-r|Win32.ActiveCfg = Release|Win32
+		{8080955F-9407-4D62-8D30-E699483124F1}.static-r|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

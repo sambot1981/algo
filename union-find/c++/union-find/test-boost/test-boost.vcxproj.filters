@@ -15,11 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="TestQF.cpp">
+    <ClCompile Include="Manual.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TestQF2.cpp">
+    <ClCompile Include="master.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="union-find.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
