@@ -1,4 +1,6 @@
-#pragma once
+#ifndef QF_H
+#define QF_H
+
 class QF
 {
 private:
@@ -10,4 +12,4 @@ public:
 	bool connected(int p, int q);
 };
 
-
+#endif
