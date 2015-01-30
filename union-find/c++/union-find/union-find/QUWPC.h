@@ -1,11 +1,11 @@
-#ifndef QUW_H
-#define QUW_H
+#ifndef QUWPC_H
+#define QUWPC_H
 
-class QUW
+class QUWPC
 {
 public:
-	QUW(int N);
-	~QUW(void);
+	QUWPC(int N);
+	~QUWPC(void);
 	/* join two unconnected or connected component */
 	void join(int p, int q);
 	/* return connected state of two given component */

@@ -24,6 +24,9 @@
     <ClInclude Include="QUW.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="QUWPC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="QF.cpp">
@@ -36,6 +39,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="QUW.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QUWPC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

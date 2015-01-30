@@ -36,10 +36,21 @@ test_suite* init_unit_test_suite(int argc, char* argv[])
 	quw->add(BOOST_TEST_CASE(&QUW_one_symetric_connection));
 	quw->add(BOOST_TEST_CASE(&QUW_multiple_connection));
 
+	/* create test suite to for the Quick Find union find implementation */
+	test_suite* quwpc = BOOST_TEST_SUITE("quick union weighted with path compression");
+
+	/* adding test to the preceding declared test suite */
+	quwpc->add(BOOST_TEST_CASE(&QUW_instanciation));
+	quwpc->add(BOOST_TEST_CASE(&QUW_one_connection));
+	quwpc->add(BOOST_TEST_CASE(&QUW_one_reflexive_connection));
+	quwpc->add(BOOST_TEST_CASE(&QUW_one_symetric_connection));
+	quwpc->add(BOOST_TEST_CASE(&QUW_multiple_connection));
+
 	/* add the test suite to the master test trunk*/
 	framework::master_test_suite().add(quf);
 	framework::master_test_suite().add(qu);
 	framework::master_test_suite().add(quw);
+	framework::master_test_suite().add(quwpc);
 
 	return 0;
 }

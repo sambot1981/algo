@@ -82,12 +82,14 @@
     <ClInclude Include="QF.h" />
     <ClInclude Include="QU.h" />
     <ClInclude Include="QUW.h" />
+    <ClInclude Include="QUWPC.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="QF.cpp" />
     <ClCompile Include="QU.cpp" />
     <ClCompile Include="QUW.cpp" />
+    <ClCompile Include="QUWPC.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

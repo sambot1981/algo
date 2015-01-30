@@ -1,6 +1,6 @@
-#include "QUW.h"
+#include "QUWPC.h"
 
-QUW::QUW(int N)
+QUWPC::QUWPC(int N)
 {
 	_N = N;
 	_id = new int[_N];
@@ -11,7 +11,8 @@ QUW::QUW(int N)
 		_sz[i] = 1;
 }
 
-QUW::~QUW(void)
+
+QUWPC::~QUWPC()
 {
 	if (_id != nullptr)
 		delete[] _id;
@@ -20,7 +21,7 @@ QUW::~QUW(void)
 	return;
 }
 
-void QUW::join(int p, int q)
+void QUWPC::join(int p, int q)
 {
 	int rp = root(p);
 	int rq = root(q);
@@ -37,18 +38,21 @@ void QUW::join(int p, int q)
 		_id[rp] = rq;
 		_sz[rq] = _sz[rq] + _sz[rp];
 	}
+
 }
 
-bool QUW::connected(int p, int q)
+bool QUWPC::connected(int p, int q)
 {
 	return root(p) == root(q);
 }
 
-int QUW::root(int p)
+int QUWPC::root(int p)
 {
 	int curr_id = p;
 	while (curr_id != _id[curr_id])
+	{
+		_id[curr_id] = _id[_id[curr_id]];
 		curr_id = _id[curr_id];
+	}
 	return curr_id;
 }
-

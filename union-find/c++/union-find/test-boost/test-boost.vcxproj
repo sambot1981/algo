@@ -96,6 +96,7 @@
     <ClCompile Include="master.cpp" />
     <ClCompile Include="TestQU.cpp" />
     <ClCompile Include="TestQUW.cpp" />
+    <ClCompile Include="TestQUWFPC.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="union-find.h" />
