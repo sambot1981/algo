@@ -13,7 +13,9 @@ void QU_instanciation()
 void QU_one_connection()
 {
 	int N = 10;
-	QU *p = &QU(N);
+	QU *p = nullptr;
+	QU qf = QU(N);
+	p = &qf;
 	BOOST_REQUIRE(p != nullptr);
 
 	int x = 5, y = 6;
@@ -35,7 +37,9 @@ void QU_one_connection()
 void QU_one_reflexive_connection()
 {
 	int N = 10;
-	QU *p = &QU(N);
+	QU *p = nullptr;
+	QU qf = QU(N);
+	p = &qf;
 	BOOST_REQUIRE(p != nullptr);
 
 	BOOST_CHECK_EQUAL(p->connected(6, 6), true);
@@ -44,7 +48,9 @@ void QU_one_reflexive_connection()
 void QU_one_symetric_connection()
 {
 	int N = 10;
-	QU *p = &QU(N);
+	QU *p = nullptr;
+	QU qf = QU(N);
+	p = &qf;
 	BOOST_REQUIRE(p != nullptr);
 
 	BOOST_CHECK_EQUAL(p->connected(5, 6), false);
@@ -67,7 +73,10 @@ void QU_one_symetric_connection()
 void QU_multiple_connection()
 {
 	int N = 10;
-	QU *p = &QU(N);
+	QU *p = nullptr;
+	QU qf = QU(N);
+	p = &qf;
+	BOOST_REQUIRE(p != nullptr);
 
 	p->join(2, 1);
 	p->join(2, 3);
@@ -76,7 +85,7 @@ void QU_multiple_connection()
 	p->join(0, 5);
 
 	BOOST_CHECK_EQUAL(p->connected(5, 1), true);
-	for (size_t i = 6; i <= N; i++)
+	for (size_t i = 6; i < N; i++)
 	{
 		BOOST_CHECK_EQUAL(p->connected(1, i), false);
 	}

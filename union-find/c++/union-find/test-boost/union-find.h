@@ -18,3 +18,14 @@ void QU_one_reflexive_connection();
 void QU_one_symetric_connection();
 
 void QU_multiple_connection();
+
+
+void QUW_instanciation();
+
+void QUW_one_connection();
+
+void QUW_one_reflexive_connection();
+
+void QUW_one_symetric_connection();
+
+void QUW_multiple_connection();

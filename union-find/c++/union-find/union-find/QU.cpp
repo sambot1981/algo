@@ -10,6 +10,15 @@ QU::QU(int N)
 	}
 }
 
+QU::~QU(void)
+{
+	if (_id != nullptr)
+	{
+		delete[] _id;
+	}
+	return;
+}
+
 bool QU::connected(int p, int q)
 {
 	return root(p) == root(q);

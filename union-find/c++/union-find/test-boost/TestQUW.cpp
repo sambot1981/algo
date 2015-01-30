@@ -1,27 +1,27 @@
 
 #include <boost/test/unit_test.hpp>
-#include "QF.h"
+#include "QUW.h"
 
 using namespace boost::unit_test;
 
-void QF_instanciation()
+void QUW_instanciation()
 {
-	QF *p = &QF(10);
+	QUW *p = &QUW(10);
 	BOOST_REQUIRE(p != nullptr);
 }
 
-void QF_one_connection()
+void QUW_one_connection()
 {
 	int N = 10;
-	QF *p = nullptr;
-	QF qf = QF(N);
+	QUW *p = nullptr;
+	QUW qf = QUW(N);
 	p = &qf;
-
 	BOOST_REQUIRE(p != nullptr);
 
-	BOOST_CHECK_EQUAL(p->connected(5, 6), false);
-	p->join(5, 6);
-	BOOST_CHECK_EQUAL(p->connected(5, 6), true);
+	int x = 5, y = 6;
+	BOOST_CHECK_EQUAL(p->connected(x, y), false);
+	p->join(x, y);
+	BOOST_CHECK_EQUAL(p->connected(x, y), true);
 
 	for (size_t i = 0; i < N; i++)
 	{
@@ -34,22 +34,22 @@ void QF_one_connection()
 	}
 }
 
-void QF_one_reflexive_connection()
+void QUW_one_reflexive_connection()
 {
 	int N = 10;
-	QF *p = nullptr;
-	QF qf = QF(N);
+	QUW *p = nullptr;
+	QUW qf = QUW(N);
 	p = &qf;
 	BOOST_REQUIRE(p != nullptr);
 
 	BOOST_CHECK_EQUAL(p->connected(6, 6), true);
 }
 
-void QF_one_symetric_connection()
+void QUW_one_symetric_connection()
 {
 	int N = 10;
-	QF *p = nullptr;
-	QF qf = QF(N);
+	QUW *p = nullptr;
+	QUW qf = QUW(N);
 	p = &qf;
 	BOOST_REQUIRE(p != nullptr);
 
@@ -70,11 +70,11 @@ void QF_one_symetric_connection()
 	}
 }
 
-void QF_multiple_connection()
+void QUW_multiple_connection()
 {
 	int N = 10;
-	QF *p = nullptr;
-	QF qf = QF(N);
+	QUW *p = nullptr;
+	QUW qf = QUW(N);
 	p = &qf;
 	BOOST_REQUIRE(p != nullptr);
 
@@ -85,7 +85,7 @@ void QF_multiple_connection()
 	p->join(0, 5);
 
 	BOOST_CHECK_EQUAL(p->connected(5, 1), true);
-	for (size_t i = 6; i <= N ; i++)
+	for (size_t i = 6; i < N; i++)
 	{
 		BOOST_CHECK_EQUAL(p->connected(1, i), false);
 	}
@@ -96,7 +96,7 @@ void QF_multiple_connection()
 
 	/* join the two main components now */
 	p->join(9, 1);
-	
+
 	for (size_t i = 6; i < N; i++)
 	{
 		for (size_t j = 0; j < N; j++)

@@ -10,6 +10,15 @@ QF::QF(int N)
 	}
 }
 
+QF::~QF(void)
+{
+	if (_id != nullptr) 
+	{
+		delete[] _id;
+	}		
+	return;
+}
+
 void QF::join(int p, int q)
 {
 	int idp = _id[p];
