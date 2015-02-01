@@ -19,9 +19,9 @@ class QF(object):
         return self.id[p] == self.id[q]
     
     def union(self, p, q):
-        idp = id[p]
-        idq = id[q]
+        idp = self.id[p]
+        idq = self.id[q]
         
-        for i in range(len(id)):
-            if id[i] == idp : id[i] = idq
+        for i in range(len(self.id)):
+            if self.id[i] == idp : self.id[i] = idq
     
